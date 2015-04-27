@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+   <ApplicationSettings
+           input_dir = "N:\iccv\data\pluemer\test_projection"
+           output_dir = "N:\iccv\data\pluemer\test_projection\out"
+		   input_filename = "unrescaled_points.pcd"
+           >
+   </ApplicationSettings>
+   <VPSettings
+           point_up = "125145"
+           point_down = "1590872"
+		   vp_enabled = "TRUE"
+           >
+   </VPSettings>
+   <ScaleSettings
+           point_1 = "441073"
+           point_2 = "1654667"
+		   dist_12 = "3.5"
+		   sc_enabled = "TRUE"
+           >
+   </ScaleSettings>
+   <LOD1Settings
+		   lod1_enabled = "TRUE"
+           max_planes = "10"
+		   ransac_thresh = "0.3"
+           point_down = "66532"
+		   decompose_footprint = "FALSE"
+           >
+   </LOD1Settings>
+   <LOD3Settings
+		   lod2_enabled = "TRUE"
+           sliding_step_x = "0.12"
+		   sliding_step_y = "0.12"
+		   size_variance_x = "0.3"
+		   size_variance_y = "0.4"
+		   curve_inlier_thresh = "0.12"
+           >
+   </LOD3Settings>
+   <LOD2Settings
+		   lod2_enabled = "TRUE"
+           inlier_thresh = "0.2"
+		   nr_samples = "0.2"
+		   merge_enable = "FALSE"
+           >
+   </LOD2Settings>
+</root>
